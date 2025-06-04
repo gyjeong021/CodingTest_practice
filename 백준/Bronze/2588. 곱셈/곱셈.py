@@ -1,7 +1,7 @@
 one = int(input())
-two = input()
+two = int(input())
 
-print(one*int(two[2]))
-print(one*int(two[1]))
-print(one*int(two[0]))
-print(one*int(two))
+print(one*(two%10))
+print(one*((two//10)%10))
+print(one*(two//100))
+print(one*two)
